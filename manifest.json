@@ -1,0 +1,39 @@
+{
+  "name":"Vula Deadlines",
+  "description":"Browser extension for automatically organizing all your Vula assessments in ONE click.",
+  "version":"1.0.1",
+  "manifest_version":3,
+  "icons": {
+    "16": "icon-developer-icon.png",
+    "48": "icon-developer-icon.png",
+    "128": "icon-developer-icon.png"
+  },
+  "background":{
+    "service_worker": "background.js" 
+  },
+  "options_page":"./options.html",
+  "action":{
+      "default_popup":"popup.html"
+  },
+  "content_scripts":[
+    {
+      "matches":[
+        "https://*.vula.uct.ac.za/portal*"
+      ],
+      "js":[ "content.js"]
+    }
+  ]
+  ,
+
+  "permissions":[
+      
+      "storage"
+  ],
+  "host_permissions" :[ 
+      "https://*.vula.uct.ac.za/portal*"
+     
+  ] 
+   
+  
+ 
+}

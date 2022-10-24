@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#backBtn {
+    width: 100%;
+  background-color: #0485ff;;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ 
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#backBtn:hover {
+  background-color: #0485ff;;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+body{
+    background: #F4F7FD;
+    margin-top:20px;
+    width: 300px;
+}
+</style>
+<body>
+
+<h3>Add Assessment To My List</h3>
+
+<div>
+   
+    <label for="fname">Title</label>
+    <input id="title" type="text"  name="firstname" placeholder="Title...">
+
+    <label for="lname">Site</label>
+    <input id="courseCode" type="text"  name="lastname" placeholder="Course code...">
+
+    <label for="country">Assessment Type</label>
+    <select id="type" name="country">
+      <option value="Assignment">Assignment</option>
+      <option value="Tests and Quizes">Tests and Quizes</option>
+      <option value="Major Test">Major Test</option>
+      <option value="Exam">Major Exam</option>
+    </select>
+    <input type="date" id="date" name="birthday">
+    <input type="time" id="time" name="appt">
+  
+    <input type="submit" value="Add Assessment" id="storeBtn">
+   
+   
+  <input  type="submit"  id="backBtn" value="Back">
+</div>
+<script src="addTask.js"></script>
+</body>
+</html>
+
+
